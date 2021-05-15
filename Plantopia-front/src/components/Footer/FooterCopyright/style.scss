@@ -1,0 +1,14 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+
+.footer-copyright {
+  width: 100%;
+  & p {
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 0.9em;
+    padding-bottom: vars.$gutter;
+    color: vars.$color-green-light;
+  }
+}

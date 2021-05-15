@@ -1,0 +1,89 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.trefle-card {
+  flex: 0 1 calc(45% - 0.3em);
+  background-color: rgba(235, 227, 220, 0.7);
+  margin: vars.$gutter/4;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #d1caba;
+}
+
+.trefle-card-content {
+  padding: vars.$gutter/2;
+}
+.trefle-card-title {
+  color : vars.$color-green;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .75em;
+  padding-bottom: 0.4em;
+
+}
+
+.trefle-card-text {
+  color:grey;
+  font-size: 0.6em;
+  line-height: 1em;
+  text-align: justify;
+  padding-top: 0.4em;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.trefle-card-subtitle {
+  color:grey;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 0.8em;
+}
+
+.trefle-card-specs {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.trefle-card-year,
+.trefle-card-scientificname {
+  color:grey;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 0.6em;
+  line-height: 1em;
+}
+
+
+.trefle-card-icon {
+ margin-left: 0.5em;
+ margin-right: 0.5em;
+ top: 1em;
+ color: vars.$color-green;
+}
+
+.green {
+  color : vars.$color-green;
+}
+
+.orange {
+  color : vars.$color-orange;
+}
+
+.green-light {
+  color : vars.$color-green-light;
+}
+
+
+.nomargin { margin-left: 0em;}
+
+@media only screen and (min-width: 800px) {
+  .trefle-card {
+    flex: 0 1 calc(30% - 0.5em);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .trefle-card {
+    flex: 0 1 calc(20% - 0.2em);
+  }
+}
+
+

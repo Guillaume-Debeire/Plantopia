@@ -1,0 +1,89 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="570" height="238" view_box="0 0 570 238"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Mon, 08 Feb 2021 06:34:55</desc>
+
+<rect id="frame" x="0" y="0" width="570" height="238" fill="#f7f7f7" stroke="none" stroke-width="0"/>
+
+<!-- Association POSSEDE -->
+<line x1="266" y1="119" x2="390" y2="119" stroke="#7fbc41" stroke-width="2"/>
+<text x="326" y="136.0" fill="#c51b7d" font-family="Verdana" font-size="12">1,1</text>
+<line x1="510" y1="119" x2="390" y2="119" stroke="#7fbc41" stroke-width="2"/>
+<text x="432" y="136.0" fill="#c51b7d" font-family="Verdana" font-size="12">0,N</text>
+<g id="association-POSSEDE">
+	<path d="M 413 94 a 14 14 90 0 1 14 14 V 119 h -74 V 108 a 14 14 90 0 1 14 -14" fill="#b8e186" stroke="#b8e186" stroke-width="0"/>
+	<path d="M 427 119.0 v 11 a 14 14 90 0 1 -14 14 H 367 a 14 14 90 0 1 -14 -14 V 119.0 H 74" fill="#e6f5d0" stroke="#e6f5d0" stroke-width="0"/>
+	<rect x="353" y="94" width="74" height="50" fill="none" rx="14" stroke="#7fbc41" stroke-width="2"/>
+	<line x1="353" y1="119" x2="427" y2="119" stroke="#7fbc41" stroke-width="1"/>
+	<text x="360" y="111.7" fill="#000000" font-family="Verdana" font-size="12">POSSEDE</text>
+</g>
+
+<!-- Association APPARTIENT -->
+<line x1="266" y1="119" x2="133" y2="119" stroke="#7fbc41" stroke-width="2"/>
+<text x="185" y="136.0" fill="#c51b7d" font-family="Verdana" font-size="12">1,1</text>
+<line x1="32" y1="119" x2="133" y2="119" stroke="#7fbc41" stroke-width="2"/>
+<text x="60" y="136.0" fill="#c51b7d" font-family="Verdana" font-size="12">1,N</text>
+<g id="association-APPARTIENT">
+	<path d="M 165 94 a 14 14 90 0 1 14 14 V 119 h -92 V 108 a 14 14 90 0 1 14 -14" fill="#b8e186" stroke="#b8e186" stroke-width="0"/>
+	<path d="M 179 119.0 v 11 a 14 14 90 0 1 -14 14 H 101 a 14 14 90 0 1 -14 -14 V 119.0 H 92" fill="#e6f5d0" stroke="#e6f5d0" stroke-width="0"/>
+	<rect x="87" y="94" width="92" height="50" fill="none" rx="14" stroke="#7fbc41" stroke-width="2"/>
+	<line x1="87" y1="119" x2="179" y2="119" stroke="#7fbc41" stroke-width="1"/>
+	<text x="94" y="111.7" fill="#000000" font-family="Verdana" font-size="12">APPARTIENT</text>
+</g>
+
+<!-- Entity PLANTES -->
+<g id="entity-PLANTES">
+	<g id="frame-PLANTES">
+		<rect x="211" y="9" width="110" height="25" fill="#f1b6da" stroke="#f1b6da" stroke-width="0"/>
+		<rect x="211" y="34.0" width="110" height="195" fill="#fde0ef" stroke="#fde0ef" stroke-width="0"/>
+		<rect x="211" y="9" width="110" height="220" fill="none" stroke="#de77ae" stroke-width="2"/>
+		<line x1="211" y1="34" x2="321" y2="34" stroke="#de77ae" stroke-width="1"/>
+	</g>
+	<text x="238" y="26.7" fill="#000000" font-family="Verdana" font-size="12">PLANTES</text>
+	<text x="216" y="51.7" fill="#000000" font-family="Verdana" font-size="12">nom</text>
+	<line x1="216" y1="54" x2="244" y2="54" stroke="#000000" stroke-width="1"/>
+	<text x="216" y="68.7" fill="#000000" font-family="Verdana" font-size="12">description</text>
+	<text x="216" y="85.7" fill="#000000" font-family="Verdana" font-size="12">arrosage</text>
+	<text x="216" y="102.7" fill="#000000" font-family="Verdana" font-size="12">luminosité</text>
+	<text x="216" y="119.8" fill="#000000" font-family="Verdana" font-size="12">taille</text>
+	<text x="216" y="136.8" fill="#000000" font-family="Verdana" font-size="12">fertilisation</text>
+	<text x="216" y="153.8" fill="#000000" font-family="Verdana" font-size="12">rempotage</text>
+	<text x="216" y="170.8" fill="#000000" font-family="Verdana" font-size="12">image</text>
+	<text x="216" y="187.8" fill="#000000" font-family="Verdana" font-size="12">user_id</text>
+	<text x="216" y="204.8" fill="#000000" font-family="Verdana" font-size="12">date_acquisition</text>
+</g>
+
+<!-- Entity UTILISATEURS -->
+<g id="entity-UTILISATEURS">
+	<g id="frame-UTILISATEURS">
+		<rect x="459" y="51" width="102" height="25" fill="#f1b6da" stroke="#f1b6da" stroke-width="0"/>
+		<rect x="459" y="76.0" width="102" height="111" fill="#fde0ef" stroke="#fde0ef" stroke-width="0"/>
+		<rect x="459" y="51" width="102" height="136" fill="none" stroke="#de77ae" stroke-width="2"/>
+		<line x1="459" y1="76" x2="561" y2="76" stroke="#de77ae" stroke-width="1"/>
+	</g>
+	<text x="464" y="68.7" fill="#000000" font-family="Verdana" font-size="12">UTILISATEURS</text>
+	<text x="464" y="93.7" fill="#000000" font-family="Verdana" font-size="12">pseudo</text>
+	<line x1="464" y1="96" x2="508" y2="96" stroke="#000000" stroke-width="1"/>
+	<text x="464" y="110.7" fill="#000000" font-family="Verdana" font-size="12">email</text>
+	<text x="464" y="127.8" fill="#000000" font-family="Verdana" font-size="12">avatar</text>
+	<text x="464" y="144.8" fill="#000000" font-family="Verdana" font-size="12">password</text>
+	<text x="464" y="161.8" fill="#000000" font-family="Verdana" font-size="12">created_at</text>
+	<text x="464" y="178.8" fill="#000000" font-family="Verdana" font-size="12">updated_at</text>
+</g>
+
+<!-- Entity TYPE -->
+<g id="entity-TYPE">
+	<g id="frame-TYPE">
+		<rect x="9" y="94" width="46" height="25" fill="#f1b6da" stroke="#f1b6da" stroke-width="0"/>
+		<rect x="9" y="119.0" width="46" height="25" fill="#fde0ef" stroke="#fde0ef" stroke-width="0"/>
+		<rect x="9" y="94" width="46" height="50" fill="none" stroke="#de77ae" stroke-width="2"/>
+		<line x1="9" y1="119" x2="55" y2="119" stroke="#de77ae" stroke-width="1"/>
+	</g>
+	<text x="16" y="111.7" fill="#000000" font-family="Verdana" font-size="12">TYPE</text>
+	<text x="14" y="136.8" fill="#000000" font-family="Verdana" font-size="12">name</text>
+	<line x1="14" y1="139" x2="49" y2="139" stroke="#000000" stroke-width="1"/>
+</g>
+</svg>

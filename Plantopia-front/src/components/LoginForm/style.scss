@@ -1,0 +1,80 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.login-form {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+.login-form-element {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.login-form-message {
+  text-align: right;
+  margin: .3em 1em;
+}
+.login-form-logged {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.login-form-button {
+  font-weight: 700;
+  font-size: 1em;
+  color: #fff;
+  background-color: vars.$color-green;
+  border-radius: .3em;
+  border: 0;
+  padding: .3em .5em;
+  height: 2.3em;
+  transition: all 500ms ease; 
+  margin-left: 1em;
+
+  &-logout {
+    font-weight: 700;
+    font-size: 1em;
+    color: vars.$color-orange;
+    border: 2px solid vars.$color-orange;
+    border-radius: .3em;
+    padding: .3em .5em;
+    height: 2.3em;
+    transition: all 500ms ease; 
+    margin-left: 1em;
+    
+    &:hover {
+      background-color: vars.$color-orange;
+      color: #fff;
+    }
+  }
+      
+  &-light {
+    font-weight: 700;
+    font-size: 1em;
+    color: #fff;
+    background-color: vars.$color-green;
+    border-radius: .3em;
+    border: 0;
+    padding: .3em .5em;
+    height: 2.3em;
+    transition: all 500ms ease; 
+    margin-left: 1em;
+
+    &:hover {
+      background-color: vars.$color-green-light;
+    }
+  }
+
+  &:hover {
+    background-color: vars.$color-green-light;
+  }
+}
+
+
+@media (min-width: 960px) {
+	.login-form-element {
+    flex-wrap: nowrap;
+    align-items: space-around;
+  }
+ }
+  

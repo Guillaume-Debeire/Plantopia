@@ -1,0 +1,17 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.plant-container {
+	width: 1600px;
+	max-width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.plant {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+  flex-wrap: wrap;
+  
+}

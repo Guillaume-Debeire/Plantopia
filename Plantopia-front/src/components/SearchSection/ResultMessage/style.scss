@@ -1,0 +1,13 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+
+.result-message {
+  margin: vars.$gutter 0;
+  text-align: center;
+
+  &-number {
+    color: vars.$color-green;
+    font-weight: 800;
+  }
+}

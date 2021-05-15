@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+        <link rel="icon" type="image/png" href="{{ asset('images/favicon/favicon.ico') }}">
+        {% block stylesheets %}
+            {#{{ encore_entry_link_tags('app') }}#}
+            <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        {% endblock %}
+
+        {% block javascripts %}
+            {#{{ encore_entry_script_tags('app') }}#}
+        {% endblock %}
+    </head>
+    <body>
+        {% block nav %}
+        <nav class="navigation">
+          <div class="nav_left">
+            <a class="logo-home" href="{{ path('home') }}"><img src="{{ asset('images/homepage/logo-plantopia-dark.png') }}" width="50px" alt=""></a>
+          
+            {% if is_granted('ROLE_ADMIN') %}
+            
+              <a class="nav-a" href="{{ path('plant_index') }}">Plantes</a>
+            
+              <a class="nav-a" href="{{ path('user_index') }}">Utilisateurs</a>
+            
+              <a class="nav-a" href="{{ path('type_index') }}">Types</a>
+            
+              <a class="nav-a" href="{{ path('skill_index') }}">Skills</a>
+            
+            </div>
+            
+            {% endif %}
+            {% if app.user %}
+            <div class="nav_right">
+              <a class="nav-a" href="http://plantopia.surge.sh">Plantopia</a>
+              <a class="nav-a" href="{{ path('app_logout') }}">Déconnexion</a>
+            {% if app.user.avatar != null %}
+              <a href="{{ path('user_show', {id: app.user.id}) }}"><img class="profilpic" src="{{ asset('images/avatar/' ~ app.user.avatar ) }}" width="200px" /></a> 
+              {% else %}
+              <a href="{{ path('user_edit', {id: app.user.id}) }}">{{ app.user.username }}</a>
+            {% endif %}
+             
+            {% else %}
+            <a class="nav-a" href="{{  path('app_login') }}">Connexion ! </a>
+            
+            {% endif %}
+            </div>
+            
+          </nav>
+
+          {# <hr> #}
+
+            {# display every flash message available #}
+            {% for label, messages in app.flashes %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ label }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        
+        {% endblock %}
+        {% block body %}{% endblock %}
+    </body>
+</html>

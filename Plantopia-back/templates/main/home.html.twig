@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue chez Plantopia !{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>PLANTOPIA</h1>
+
+    <p>Bienvenue au backoffice de Plantopia !</br>Connectez-vous pour avoir accès aux données.</br>Si vous n'êtes pas un administrateur du site,</br>nous vous invitons à cliquer sur ce lien : <a href="localhost:8090" class="homelink">Plantopia</a>.</p>
+    <img class="home_image" src="{{ asset('images/homepage/topic4.jpg') }}" width="800px" alt="">
+</div>
+{% endblock %}

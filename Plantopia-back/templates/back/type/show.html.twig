@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Type de plante{% endblock %}
+
+{% block body %}
+    <h1>Type de plante</h1>
+    <nav class="details_nav">
+    <a href="{{ path('type_index') }}" class="btn">Retour à la liste</a>
+    <a href="{{ path('type_edit', {'id': type.id}) }}" class="btn">Modifier</a>   
+    {{ include('back/type/_delete_form.html.twig') }}
+    
+    </nav>
+    <table class="table_show">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ type.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ type.name }}</td>
+            </tr>
+            <tr>
+                <th>Plantes</th>
+                <td>{% for plants in type.plants.snapshot %}
+                <a class="btnplantindex" href="/plant/{{ plants.id }}">{{ plants }}</a> <br>
+                {% endfor %}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

@@ -1,0 +1,86 @@
+@use 'src/styles/vars';
+
+.catalog-card {
+  flex: 0 1 calc(100% - 0.3em);
+  background-color: rgba(235, 227, 220, 0.1);
+  margin: vars.$gutter/4;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #EBE3DC;
+
+  &:hover .catalog-card-img {
+    opacity: 0.3;
+  }
+
+  &:hover .catalog-card-middle {
+    opacity: 1;
+  }
+
+  &-content {
+    padding: vars.$gutter/2;
+  }
+
+  &-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    color: vars.$color-green;
+  }
+
+  &-desc {
+    margin: (vars.$gutter / 2) 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+  }
+
+  &-img {
+    opacity: 1;
+    object-fit: cover;
+    width:100%;
+    height:200px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  &-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &-cta {
+    background-color: vars.$color-green;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    transition: all .5s ease;
+  }
+
+  &-cta:hover {
+    background-color: vars.$color-orange;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .catalog-card {
+    flex: 0 1 calc(30% - 0.5em);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .catalog-card {
+    flex: 0 1 calc(15% - 0.2em);
+  }
+  .catalog-card-img {
+    height:140px;
+  }
+}
+
+

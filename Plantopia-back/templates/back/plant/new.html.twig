@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvelle plante{% endblock %}
+
+{% block body %}
+    <h1>Créer une nouvelle plante</h1>
+
+    {{ include('back/plant/_form.html.twig') }}
+
+    <a class="btn" href="{{ path('plant_index') }}">Retour à la liste</a>
+{% endblock %}

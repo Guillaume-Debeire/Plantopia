@@ -1,0 +1,65 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.signup-container{
+  width: 1700px;
+	max-width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+  flex-grow: 1;
+  padding: vars.$gutter/2;
+}
+
+.signup-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  flex-direction: column;
+}
+.signup-form-element {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.signup-form-message {
+  text-align: center;
+  margin: .3em 1em;
+}
+.signup-form-logged {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.signup-form-button {
+  font-weight: 700;
+  font-size: 1em;
+  color: #fff;
+  background-color: vars.$color-green;
+  border-radius: .3em;
+  border: 0;
+  padding: .3em .5em;
+  height: 2.3em;
+  transition: all 500ms ease; 
+  margin-top: 1em;
+  }
+      
+  .signup-form-signup {
+    padding-bottom: vars.$gutter;
+  }
+ .signup-title {
+    text-align: center;
+    font-family: Bodoni Moda,serif;
+    color: #234523;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: vars.$color-green;
+    padding-top: vars.$gutter;
+  }
+  .signup-text {
+    padding-top: vars.$gutter/3;
+    padding-bottom: vars.$gutter;
+    text-align: center;
+    line-height: 1.5rem;
+  }

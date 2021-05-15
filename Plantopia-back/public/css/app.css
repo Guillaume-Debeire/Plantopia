@@ -1,0 +1,384 @@
+body {
+    background-color: rgb(12, 22, 12);
+    color: rgb(198, 255, 211);
+    margin: auto;
+    text-align: center;
+}
+
+table a {
+    color: rgb(201, 65, 255);
+}
+table a:hover{
+    color:white;
+}
+h1 {
+    text-align: center;
+}
+.header {
+    margin-top: 25px;
+    width: 80%;
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.element_add {
+    color: white;
+    text-decoration: none;
+    padding: 6px 13px;
+    box-shadow: 0px 0 0px 3px rgb(73, 141, 73);
+    font-size: 30px;
+    border-radius: 30px;
+    margin: 2em;
+    background-color: rgb(12, 22, 12);
+}
+.element_add:hover:after {
+    content: 'Ajouter un nouvel élément'
+}
+.element_add:hover {
+    color: white;
+    background: rgb(12, 22, 12);
+}
+
+td {
+    /* border-bottom: 1px solid white;
+    border-left: 1px solid white; */
+    margin: 1em;
+    font-size: medium;
+    padding: 3px;
+    /* max-width: 50px; */
+}
+th {
+    border-bottom: 0.5px solid white;
+    padding: 0 5px;
+    background-color: rgb(24, 46, 24);
+    color: white;
+
+    /* max-width: 50px; */
+    font-size: 20px;
+}
+
+.table_plant {
+    /* border: 1px outset lightgreen; */
+    width: 35vw;
+    
+    background-color: rgb(8, 15, 8);
+    margin: auto;
+    margin-top: 2em;
+    box-shadow: 0 5px 10px 5px rgb(0, 0, 0);
+    line-height: 1.8rem;
+    margin-bottom: 5em;
+}
+
+.table_show {
+    width: 40vw;
+    background-color: rgb(10, 20, 10);
+    margin: auto;
+    margin-top: 2em;
+    box-shadow: 0 5px 10px 5px rgb(0, 0, 0)
+}
+
+table tr:nth-child(odd){
+    background-image: radial-gradient(closest-corner circle at center, rgb(26, 65, 26), rgb(18, 61, 28), rgb(22, 44, 22));
+}
+table tr:nth-child(even){
+    background-image: radial-gradient(closest-corner circle at center, rgb(36, 100, 36),rgb(23, 87, 43), rgb(10, 87, 10));
+}
+
+.navigation {
+    background-image: linear-gradient(rgb(36, 70, 36), rgb(12, 22, 12));
+    position: sticky;
+    top: 0;
+    background-color: rgb(12, 22, 12);
+    /* padding-bottom: 10px; */
+    padding-top: 15px;
+    /* margin: auto; */
+    width: 100%;
+    box-shadow: 0 5px 10px 10px rgb(12, 22, 12);
+    display: flex;
+    justify-content: space-around;
+}
+.nav_left {
+    display: flex;
+    padding-right: auto;
+    list-style-type: none;
+}
+
+.nav_right{
+    
+    display: flex;
+    justify-content: flex-end;
+    right: 10px;
+}
+
+.nav-a {
+    color: white;
+    text-decoration: none;
+    /* border: white solid 0.5px; */
+    padding: 6px 13px;
+    /* box-shadow: 0px 2px 0px 3px rgb(29, 58, 29); */
+    font-size: 30px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.nav-a:hover {
+    color: rgb(12, 22, 12);
+    background-color: white;
+}
+
+/* .navigation a:hover{
+    color: rgb(12, 46, 20);
+    background: white;
+} */
+.details_nav {
+    display: flex;
+    justify-content: center;
+    /* padding-right: 2em; */
+    padding-left: 2em;
+    align-items: baseline;
+}
+.details_nav_right {
+    display: flex;
+    padding-right: 1em;
+}
+
+.login_form {
+    padding: 2em
+}
+.edit_button{
+    
+    color: white;
+    text-decoration: none;
+    /* border: white solid 0.5px; */
+    padding: 6px 13px;
+    /* box-shadow: 0px 2px 0px 3px rgb(29, 58, 29); */
+    font-size: 30px;
+    border-radius: 30px;
+    margin: 5px;
+}
+.edit_button:hover{
+    color: rgb(12, 46, 20);
+    background: white;
+}
+.back_button {
+    color: white;
+    text-decoration: none;
+    /* border: white solid 0.5px; */
+    padding: 6px 13px;
+    /* box-shadow: 0px 2px 0px 3px rgb(29, 58, 29); */
+    font-size: 30px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.back_button:hover{
+    color: rgb(12, 46, 20);
+    background: white;
+}
+
+.btnconnexion {
+    color: rgb(35, 69, 35);
+    text-decoration: none;
+    /* border: white solid 0.5px; */
+    padding: 6px 13px;
+    /* box-shadow: 0px 2px 0px 3px rgb(29, 58, 29); */
+    font-size: 30px;
+    border-radius: 30px;
+    margin: 50px auto;
+    width: 200px;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    /* border: white solid 0.5px; */
+    padding: 6px 13px;
+    /* box-shadow: 0px 2px 0px 3px rgb(29, 58, 29); */
+    font-size: 30px;
+    border-radius: 30px;
+    margin: 5px;
+    background-color: rgb(12, 22, 12);
+    border: 1px solid rgb(110, 126, 110);
+}
+
+.btnaction {
+    color: white;
+    text-decoration: none;
+    /* border: white solid 0.5px; */
+    padding: 1px 4px;
+    /* box-shadow: 0px 2px 0px 3px rgb(29, 58, 29); */
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform .2s;
+    /* background-color: rgb(35, 69, 35);
+    border: 1px solid rgb(110, 126, 110); */
+}
+
+.btnaction:hover {
+    transform: scale(1.5);
+    color: rgb(35, 69, 35);
+    background-color: white;
+    /* border: 1px solid rgb(110, 126, 110); */
+}
+
+.btnplantindex {
+    color: white;
+    text-decoration: none;
+    /* border: white solid 0.5px; */
+    padding: 1px 4px;
+    /* box-shadow: 0px 2px 0px 3px rgb(29, 58, 29); */
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform .2s;
+    /* background-color: rgb(35, 69, 35);
+    border: 1px solid rgb(110, 126, 110); */
+}
+
+.btnplantindex:hover {
+    transform: scale(1.5);
+    color: rgb(35, 69, 35);
+    background-color: white;
+    /* border: 1px solid rgb(110, 126, 110); */
+}
+
+.btn:hover {
+    color: rgb(12, 22, 12);
+    background-color: white;
+}
+
+.btnconnexion:hover {
+    color: white;
+    background-color: rgb(35, 69, 35);
+}
+
+form {
+    margin: 1em;
+}
+
+.profilpic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.mascot {
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: auto;
+    /* box-shadow: 0px 20px 20px 20px rgb(0, 0, 0); */
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.home_image{
+    border-radius: 15%;
+    /* border: 1px white solid; */
+    box-shadow: 0px 20px 20px 20px rgb(0, 0, 0);
+}
+
+.logo-home {
+    margin: 0 15px;
+}
+
+/*.formnew {
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding: auto;
+    line-height: 2rem;
+}*/
+
+.formulaire {
+    background-image: radial-gradient(closest-corner circle at center, rgb(35, 69, 35), rgb(12, 46, 20), rgb(17, 31, 17));
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid grey; */
+    width: 30vw;
+    background-color: rgb(17, 31, 17);
+    border-radius: 5%;
+    box-shadow: 0px 20px 20px 20px rgb(0, 0, 0);
+    line-height: 2rem;
+    justify-content: space-between
+}
+
+.formulaire2 {
+    background-image: radial-gradient(closest-corner circle at center, rgb(35, 69, 35), rgb(12, 46, 20), rgb(17, 31, 17));
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid grey; */
+    width: 60vw;
+    background-color: rgb(17, 31, 17);
+    border-radius: 5%;
+    box-shadow: 0px 20px 20px 20px rgb(0, 0, 0);
+    line-height: 3rem;
+    justify-content: space-between
+}
+
+
+.colonne2 {
+    position: auto;
+    right: 0;
+    text-align: right;
+}
+
+.range {
+    /* line-height: 4rem; */
+    padding: auto;
+    display: flex;
+    margin-right: 2rem;
+    
+    /*justify-content: center;*/
+}
+.range1 {
+    font-size: 20px;
+    margin-left: 2rem;
+}
+
+.range3 {
+    width: 30vw;
+    margin: auto;
+    /* height: 20px; */
+    
+}
+
+.range3 thead {
+    display: none;
+}
+
+#plant_watering {
+    text-align: center;
+    display:flex;
+}
+
+.homelink {
+    color: white;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #4475a7;
+    }
+  } */

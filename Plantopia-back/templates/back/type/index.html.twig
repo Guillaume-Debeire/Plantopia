@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des types de plante{% endblock %}
+
+{% block body %}
+    <h1>Liste des types</h1>
+
+    <a class="element_add" href="{{ path('type_new') }}">+</a>
+    <table class="table_show">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for type in types %}
+            <tr>
+                <td>{{ type.id }}</td>
+                <td>{{ type.name }}</td>
+                <td>
+                    <a href="{{ path('type_show', {'id': type.id}) }}" class="btnaction">Détails</a>
+                    <a href="{{ path('type_edit', {'id': type.id}) }}" class="btnaction">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">Aucune donnée trouvée</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    
+{% endblock %}

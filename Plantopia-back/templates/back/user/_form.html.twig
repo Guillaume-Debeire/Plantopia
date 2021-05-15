@@ -1,0 +1,70 @@
+{# {{ form_start(form) }}
+    <div class="formnew">
+    {{ form_widget(form) }}
+    </div>
+    <button class="btn">{{ button_label|default('Enregistrer') }}</button>
+{{ form_end(form) }} #}
+
+{{ form_start(form) }}
+    <div class="form-errors">
+        {{ form_errors(form) }}
+    </div>
+<div class="formulaire">
+    <div class="colonne1">
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.pseudo) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.email) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.avatar) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.roles) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.password) }}
+            </div>
+        </div>
+    </div>
+
+    <div class="colonne2">
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.pseudo) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.email) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.avatar) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.roles) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.password) }}
+            </div>
+        </div>
+    </div>
+</div>
+<button class="btn">{{ button_label|default('Enregistrer') }}</button>    
+{{ form_end(form) }}

@@ -1,0 +1,8 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}

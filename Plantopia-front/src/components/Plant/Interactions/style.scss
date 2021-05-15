@@ -1,0 +1,58 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.interactions {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  padding-bottom: 0.25em;
+}
+.plant-btn {
+  margin: 2rem 2rem;
+  font-size: 16px;
+  border-radius: 0.5rem;
+  padding: 11px;
+  width: 100%;
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight:800;
+  transition: all .5s ease;
+  color: white;
+  border: none;
+}
+.add-btn {
+  background-color: vars.$color-green;
+
+  &:hover {
+    background-color: vars.$color-green-light;
+  }
+}
+
+.modify-btn {
+  background-color: vars.$color-orange;
+
+  &:hover {
+    background-color: vars.$color-green-light;
+  }
+}
+
+
+.delete-btn {
+  background-color: transparent;
+  border: 2px solid vars.$color-orange;
+  color: vars.$color-orange;
+
+  &:hover {
+    background-color: vars.$color-orange;
+    border: 2px solid vars.$color-orange;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .plant-btn {
+    width: 27%;
+  }
+}

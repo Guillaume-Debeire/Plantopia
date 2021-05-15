@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Utilisateurs{% endblock %}
+
+{% block body %}
+    <h1>Liste des utilisateurs</h1>
+
+    <a class="element_add" href="{{ path('user_new') }}">+</a>
+    <table class="table_show">
+        <thead>
+            <tr>
+                <th>Avatar</th>
+                <th>Pseudo</th>
+                <th>Email</th> 
+                <th>Rôle</th>
+                <th>Création</th>
+                <th>Mise à jour</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{% if (user.avatar is null) %}
+                <img src="{{ asset('images/homepage/IMG_0064.PNG' ) }}" width="30px" />
+                {% else %}
+                <img src="{{ asset('images/avatar/' ~ user.avatar ) }}" width="30px" />
+                {% endif %}</td>
+                <td><a class="btnplantindex" href="/user/{{ user.id }}">{{ user.pseudo }}</a></td>
+                <td>{{ user.email }}</td>
+                
+                <td>{% for roles in user.roles %}
+                    {{ roles }}
+                    {% endfor %}
+                </td>
+                <td>{{ user.createdAt ? user.createdAt|date('d/m/Y H:i:s') : '' }}</td>
+                <td>{{ user.updatedAt ? user.updatedAt|date('d/m/Y H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('user_show', {'id': user.id}) }}" class="btnaction">Détails</a>
+                    <a href="{{ path('user_edit', {'id': user.id}) }}" class="btnaction">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">Aucune donnée trouvée</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    
+{% endblock %}

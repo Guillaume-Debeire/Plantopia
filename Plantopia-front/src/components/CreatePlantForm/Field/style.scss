@@ -1,0 +1,70 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.createplant-form-element .field {
+  margin: .3em;
+  position: relative;
+}
+.createplant-form-element .field-input {
+  width: 100%;
+  min-width: 300px;
+  padding: .7em;
+  font-size: 1em;
+  border: 1px solid lightgrey;
+  border-radius: .3em;
+  height: 2.3em;
+  font-family: 'Montserrat', sans-serif;
+}
+.field-input:focus {
+  border-color: vars.$color-green;
+}
+.field-input:focus + .field-label {
+  color: vars.$color-green;
+}
+
+.field--has-content .field-label {
+  display: block;
+}
+
+.field--has-content .field-input {
+  padding: 1.4em .7em .4em;
+}
+
+.field-label {
+  display: none;
+  position: absolute;
+  top: .2rem;
+  left: .7rem;
+  font-weight: 700;
+  color: vars.$color-brown;
+  font-size: .7em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  animation: labelSlideUpAndShow .3s;
+}
+
+@keyframes labelSlideUpAndShow{
+  0% {
+    transform: translateY(1em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0em);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  
+  .createplant-form-element .field-input {
+    width: 100%;
+    min-width: 600px;
+    padding: .7em;
+    font-size: 1em;
+    border: 1px solid lightgrey;
+    border-radius: .3em;
+    height: 2.3em;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+

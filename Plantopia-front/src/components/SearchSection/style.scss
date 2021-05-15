@@ -1,0 +1,11 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.light {
+  color: vars.$color-beige;
+}
+
+.search-section {
+  padding-bottom: vars.$gutter*2;
+}
+

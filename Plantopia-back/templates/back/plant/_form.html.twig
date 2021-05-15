@@ -1,0 +1,138 @@
+{# {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn">{{ button_label|default('Enregistrer') }}</button>
+{{ form_end(form) }} #}
+
+{{ form_start(form) }}
+    <div class="form-errors">
+        {{ form_errors(form) }}
+    </div>
+<div class="formulaire2">
+    <div class="colonne1">
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.name) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.picture) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.age) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.initialization_date) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.type) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.skill) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.watering) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.light) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.cut) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.fertilization) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range1">
+            {{ form_label(form.repotting) }}
+            </div>
+        </div>
+            <div class="range">
+            <div class="range1">
+            {{ form_label(form.specification) }}
+            </div>
+        </div>
+    </div>
+
+    <div class="colonne2">
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.name) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.picture) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.age) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.initialization_date) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.type) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.skill) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range3">
+            {{ form_widget(form.watering) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.light) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.cut) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.fertilization) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.repotting) }}
+            </div>
+        </div>
+        <div class="range">
+            <div class="range2">
+            {{ form_widget(form.specification) }}
+            </div>
+        </div>
+    </div>
+</div>
+     <button class="btn">{{ button_label|default('Enregistrer') }}</button>
+{{ form_end(form) }}

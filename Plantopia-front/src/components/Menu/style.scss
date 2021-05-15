@@ -1,0 +1,75 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+.container {
+	width: 1600px;
+	max-width: 100%;
+	padding: 10px;
+  margin: 0 auto;
+  
+}
+.main-header {
+  border-bottom: 1mm vars.$color-beige;
+  box-shadow: 15px 0px 5px vars.$color-beige;
+}
+.main-header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main-nav ul {
+	margin: 1em 0 .5em;
+	text-align: center;
+}
+.main-nav li {
+	display: inline;
+}
+.main-nav a {
+	display: inline-block;
+  padding: .5em 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size:0.9em;
+  letter-spacing: .1rem;
+  color: vars.$color-green;
+  transition: all 500ms ease; 
+
+
+  &:hover {
+    color: vars.$color-orange;
+
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Bodoni Moda', serif;
+  color: vars.$color-green;
+  font-size: 1.8em;
+  font-weight: 600;
+  & img {
+    margin-right: 1em;
+  }
+}
+
+.loginform-menu {
+	display: inline-block;
+  padding: .5em 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size:0.9em;
+
+}
+
+@media (min-width: 960px) {
+	.main-header .container {
+		justify-content: space-between;
+	}
+ }

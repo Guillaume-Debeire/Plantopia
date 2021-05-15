@@ -1,0 +1,25 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.search-section-bg {
+  padding: vars.$gutter*2;
+  background-image: url(../../../assets/img/background-photo.jpg);
+  background-position: right 50% bottom 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.search-section-title {
+  text-align: center;
+  font-family: Bodoni Moda, serif;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.search-section-p {
+  padding-top: .5rem;
+  padding-bottom: .75rem;
+  text-align: center;
+  line-height: 1.5rem;
+}

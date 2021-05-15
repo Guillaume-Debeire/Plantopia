@@ -1,0 +1,45 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.plant-infos {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+
+  &-card {
+    flex: 0 1 calc(16% - 0.3em);
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: vars.$gutter;
+
+    &-icon {
+      color: vars.$color-orange;
+      align-self: center;
+      font-weight: 400;
+    }
+    &-text {
+      color: vars.$color-orange;
+      align-self: center;
+      padding-top: 1em;
+      font-weight: 800;
+      font-family: 'Bodoni Moda',serif;
+    }
+    // &-small {
+    //   color: grey;
+    //   align-self: center;
+    //   padding-top: 1em;
+    //   font-size: 0.7em;
+    //   font-style: italic;
+    // }
+  }
+}
+
+.green {
+  color: vars.$color-green;
+}

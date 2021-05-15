@@ -1,0 +1,68 @@
+.wrapper{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50);
+    width: 100%;
+    padding-top: 8rem;
+    margin-bottom: 10rem ;
+  }
+  
+  .contact-form{
+    max-width: 550px;
+    margin: 0 auto;
+    background: #2d612d;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px;
+  }
+  
+  .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+  
+  .input-fields,
+  .msg{
+    width: 48%;
+  }
+  
+  .input-fields .Input,
+  .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #EBE3DC;
+    padding: 10px;
+    color: white;
+    width: 100%;
+  }
+  
+  .msg textarea{
+    height: 208px;
+  }
+  
+  .btn{
+    background: #EBE3DC;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #2d612d;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 415px){
+    .contact-form{
+      flex-direction: column;
+    }
+    .msg textarea{
+      height: 80px;
+    }
+    .input-fields,
+    .msg{
+      width: 100%;
+    }
+  }
+  

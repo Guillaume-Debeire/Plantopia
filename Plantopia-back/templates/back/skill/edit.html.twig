@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier un niveau de compétence{% endblock %}
+
+{% block body %}
+    <h1>Modifier un niveau de compétence</h1>
+
+    {{ include('back/skill/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+
+    <a href="{{ path('skill_index') }}" class="btn">Retour à la liste</a>
+
+    {{ include('back/skill/_delete_form.html.twig') }}
+{% endblock %}

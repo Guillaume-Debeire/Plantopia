@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Niveaux de compétence{% endblock %}
+
+{% block body %}
+    <h1>Liste des niveaux de compétence</h1>
+
+    <a class="element_add" href="{{ path('skill_new') }}">+</a>
+    <table class="table_show">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for skill in skills %}
+            <tr>
+                <td>{{ skill.id }}</td>
+                <td>{{ skill.name }}</td>
+                <td>
+                    <a href="{{ path('skill_show', {'id': skill.id}) }}" class="btnaction">Détails</a>
+                    <a href="{{ path('skill_edit', {'id': skill.id}) }}" class="btnaction">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">Aucune donnée trouvée</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    
+{% endblock %}

@@ -1,0 +1,8 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+
+.footer {
+  background-color: #234523;
+  color : vars.$color-beige;
+}

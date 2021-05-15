@@ -1,0 +1,106 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Plantes{% endblock %}
+
+{% block body %}
+    <header class="header_index">
+        <h1>Liste des plantes</h1>
+        
+        <a class="element_add" href="{{ path('plant_new') }}">+</a>
+    </header>
+    <table class="table_show">
+    
+        <thead>
+            <tr>
+                <th>Photo</th>
+                <th>Nom</th>
+                <th>Propriétaire</th>
+                <th>Spécifications</th>
+                <th>Age</th>
+                <th>Date d'initialisation</th>
+                <th>Rythme d'arrosage</th>
+                <th>Eclairage</th>
+                <th>Coupe</th>
+                <th>Fertilisation</th>
+                <th>Rempotage</th>
+                <th>Type</th>
+                <th>Niveau de compétence</th>
+                <th>Création</th>
+                <th>Mise à jour</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for plant in plants %}
+            <tr>
+                <td>{% if (plant.picture is null) %}
+                <img src="{{ asset('images/homepage/IMG_0064.PNG' ) }}" width="30px" />
+                {% else %}
+                <img src="{{ asset('images/picture/' ~ plant.picture ) }}" width="30px" />
+                {% endif %}
+                </td>
+                <td><a class="btnplantindex" href="/plant/{{ plant.id }}">{{ plant.name }}</a></td>
+                <td><a class="btnplantindex" href="/user/{{ plant.calendarSchedule.user.id }}">{{ plant.calendarSchedule.user.pseudo }}</a></td>
+
+                <td>{{ plant.specification | slice(0, 50) }}
+                {% if plant.specification is defined %} {% if plant.specification|length >50 %}
+                [...]
+                {% endif %}
+                {% endif %}
+                </td>
+                <td>{{ plant.age ? plant.age|date('d/m/Y') : '' }}</td>
+                <td>{{ plant.initializationDate ? plant.initializationDate|date('d-m-Y') : '' }}</td>
+                <td>{% if(plant.watering.d) is defined %}
+                    {% if (plant.watering.d == 1) %}
+                    Tous les jours
+                    {% elseif plant.watering.d > 1 %} 
+                    Tous les {{ plant.watering.d }} jours
+                    {% endif %}
+                    {% else %} Aucune information renseignée
+                    {% endif %}
+                </td>
+                <td>{{ plant.light }}</td>
+                {# <td>{% for cut in plant.cut %}
+                        {{ cut }}
+                    {% endfor %}
+                </td> #}
+                <td>{% if plant.cut %}
+                {% if plant.cut|length == 1 %} 
+                {{ plant.cut.0 }}
+                {% else %}
+                {{ plant.cut|first }} -> {{ plant.cut|last }}</td>
+                {% endif %}
+                {% endif %}
+                <td>{% for fertilization in plant.fertilization %}
+                        {{ fertilization }}
+                    {% endfor %}
+                </td>
+                <td>{% for repotting in plant.repotting %}
+                        {{ repotting }}
+                    {% endfor %}
+                </td>
+                <td>{% if (plant.type is defined) %}
+                {{ plant.type }}
+                {% endif %}
+                </td>
+                <td>{% if (plant.skill is defined) %}
+                {{ plant.skill }}
+                {% endif %}
+                </td>
+                <td>{{ plant.createdAt ? plant.createdAt|date('d/m/Y H:i:s') : '' }}</td>
+                <td>{{ plant.updatedAt ? plant.updatedAt|date('d/m/Y H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('plant_show', {'id': plant.id}) }}" class="btnaction">Détails</a>
+                    <a href="{{ path('plant_edit', {'id': plant.id}) }}" class="btnaction">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="14">Aucune donnée trouvée</td>
+            </tr>
+        {% endfor %}
+        
+        </tbody>
+    </table>
+
+{% endblock %}

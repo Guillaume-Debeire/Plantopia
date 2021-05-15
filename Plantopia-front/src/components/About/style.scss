@@ -1,0 +1,16 @@
+@use 'src/styles/vars';
+
+.about {
+  width: 1700px;
+	max-width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+  flex-grow: 1;
+  padding: vars.$gutter/2;
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: vars.$gutter*2;
+  }
+}

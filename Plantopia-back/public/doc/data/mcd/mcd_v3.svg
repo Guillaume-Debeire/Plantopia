@@ -1,0 +1,124 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="545" height="364" view_box="0 0 545 364"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Tue, 09 Feb 2021 01:12:16</desc>
+
+<rect id="frame" x="0" y="0" width="545" height="364" fill="#f7f7f7" stroke="none" stroke-width="0"/>
+
+<!-- Association NEEDS -->
+<line x1="49" y1="228" x2="150" y2="228" stroke="#d6604d" stroke-width="2"/>
+<text x="94" y="245.0" fill="#2166ac" font-family="Verdana" font-size="12">1,N</text>
+<line x1="270" y1="228" x2="150" y2="228" stroke="#d6604d" stroke-width="2"/>
+<text x="204" y="245.0" fill="#2166ac" font-family="Verdana" font-size="12">1,1</text>
+<g id="association-NEEDS">
+	<path d="M 165 203 a 14 14 90 0 1 14 14 V 228 h -58 V 217 a 14 14 90 0 1 14 -14" fill="#f4a582" stroke="#f4a582" stroke-width="0"/>
+	<path d="M 179 228.0 v 11 a 14 14 90 0 1 -14 14 H 135 a 14 14 90 0 1 -14 -14 V 228.0 H 58" fill="#fddbc7" stroke="#fddbc7" stroke-width="0"/>
+	<rect x="121" y="203" width="58" height="50" fill="none" rx="14" stroke="#d6604d" stroke-width="2"/>
+	<line x1="121" y1="228" x2="179" y2="228" stroke="#d6604d" stroke-width="1"/>
+	<text x="128" y="220.7" fill="#000000" font-family="Verdana" font-size="12">NEEDS</text>
+</g>
+
+<!-- Association CALENDAR -->
+<line x1="270" y1="228" x2="383" y2="228" stroke="#d6604d" stroke-width="2"/>
+<text x="315" y="245.0" fill="#2166ac" font-family="Verdana" font-size="12">1,1</text>
+<line x1="496" y1="228" x2="383" y2="228" stroke="#d6604d" stroke-width="2"/>
+<text x="429" y="245.0" fill="#2166ac" font-family="Verdana" font-size="12">0,N</text>
+<g id="association-CALENDAR">
+	<path d="M 410 194 a 14 14 90 0 1 14 14 V 219 h -82 V 208 a 14 14 90 0 1 14 -14" fill="#f4a582" stroke="#f4a582" stroke-width="0"/>
+	<path d="M 424 219.0 v 29 a 14 14 90 0 1 -14 14 H 356 a 14 14 90 0 1 -14 -14 V 219.0 H 82" fill="#fddbc7" stroke="#fddbc7" stroke-width="0"/>
+	<rect x="342" y="194" width="82" height="68" fill="none" rx="14" stroke="#d6604d" stroke-width="2"/>
+	<line x1="342" y1="219" x2="424" y2="219" stroke="#d6604d" stroke-width="1"/>
+	<text x="349" y="211.7" fill="#000000" font-family="Verdana" font-size="12">CALENDAR</text>
+	<text x="349" y="236.8" fill="#000000" font-family="Verdana" font-size="12">user_id</text>
+	<text x="349" y="253.8" fill="#000000" font-family="Verdana" font-size="12">plants_id</text>
+</g>
+
+<!-- Association BELONGS TO -->
+<line x1="270" y1="228" x2="270" y2="51" stroke="#d6604d" stroke-width="2"/>
+<text x="275.0" y="93" fill="#2166ac" font-family="Verdana" font-size="12">1,1</text>
+<line x1="150" y1="51" x2="270" y2="51" stroke="#d6604d" stroke-width="2"/>
+<text x="195" y="68.0" fill="#2166ac" font-family="Verdana" font-size="12">1,N</text>
+<g id="association-BELONGS TO">
+	<path d="M 304 26 a 14 14 90 0 1 14 14 V 51 h -96 V 40 a 14 14 90 0 1 14 -14" fill="#f4a582" stroke="#f4a582" stroke-width="0"/>
+	<path d="M 318 51.0 v 11 a 14 14 90 0 1 -14 14 H 236 a 14 14 90 0 1 -14 -14 V 51.0 H 96" fill="#fddbc7" stroke="#fddbc7" stroke-width="0"/>
+	<rect x="222" y="26" width="96" height="50" fill="none" rx="14" stroke="#d6604d" stroke-width="2"/>
+	<line x1="222" y1="51" x2="318" y2="51" stroke="#d6604d" stroke-width="1"/>
+	<text x="229" y="43.7" fill="#000000" font-family="Verdana" font-size="12">BELONGS TO</text>
+</g>
+
+<!-- Entity PLANTS -->
+<g id="entity-PLANTS">
+	<g id="frame-PLANTS">
+		<rect x="230" y="101" width="80" height="25" fill="#92c5de" stroke="#92c5de" stroke-width="0"/>
+		<rect x="230" y="126.0" width="80" height="229" fill="#d1e5f0" stroke="#d1e5f0" stroke-width="0"/>
+		<rect x="230" y="101" width="80" height="254" fill="none" stroke="#4393c3" stroke-width="2"/>
+		<line x1="230" y1="126" x2="310" y2="126" stroke="#4393c3" stroke-width="1"/>
+	</g>
+	<text x="246" y="118.7" fill="#000000" font-family="Verdana" font-size="12">PLANTS</text>
+	<text x="235" y="143.7" fill="#000000" font-family="Verdana" font-size="12">name</text>
+	<line x1="235" y1="146" x2="270" y2="146" stroke="#000000" stroke-width="1"/>
+	<text x="235" y="160.7" fill="#000000" font-family="Verdana" font-size="12">description</text>
+	<text x="235" y="177.7" fill="#000000" font-family="Verdana" font-size="12">age</text>
+	<text x="235" y="194.7" fill="#000000" font-family="Verdana" font-size="12">watering</text>
+	<text x="235" y="211.7" fill="#000000" font-family="Verdana" font-size="12">light</text>
+	<text x="235" y="228.8" fill="#000000" font-family="Verdana" font-size="12">cut</text>
+	<text x="235" y="245.8" fill="#000000" font-family="Verdana" font-size="12">fertilization</text>
+	<text x="235" y="262.8" fill="#000000" font-family="Verdana" font-size="12">repotting</text>
+	<text x="235" y="279.8" fill="#000000" font-family="Verdana" font-size="12">picture</text>
+	<text x="235" y="296.8" fill="#000000" font-family="Verdana" font-size="12">user_id</text>
+	<text x="235" y="313.8" fill="#000000" font-family="Verdana" font-size="12">type_id</text>
+	<text x="235" y="330.8" fill="#000000" font-family="Verdana" font-size="12">created_at</text>
+	<text x="235" y="347.8" fill="#000000" font-family="Verdana" font-size="12">updated_at</text>
+</g>
+
+<!-- Entity SKILL -->
+<g id="entity-SKILL">
+	<g id="frame-SKILL">
+		<rect x="9" y="186" width="80" height="25" fill="#92c5de" stroke="#92c5de" stroke-width="0"/>
+		<rect x="9" y="211.0" width="80" height="59" fill="#d1e5f0" stroke="#d1e5f0" stroke-width="0"/>
+		<rect x="9" y="186" width="80" height="84" fill="none" stroke="#4393c3" stroke-width="2"/>
+		<line x1="9" y1="211" x2="89" y2="211" stroke="#4393c3" stroke-width="1"/>
+	</g>
+	<text x="31" y="203.7" fill="#000000" font-family="Verdana" font-size="12">SKILL</text>
+	<text x="14" y="228.8" fill="#000000" font-family="Verdana" font-size="12">name</text>
+	<line x1="14" y1="231" x2="49" y2="231" stroke="#000000" stroke-width="1"/>
+	<text x="14" y="245.8" fill="#000000" font-family="Verdana" font-size="12">created_at</text>
+	<text x="14" y="262.8" fill="#000000" font-family="Verdana" font-size="12">updated_at</text>
+</g>
+
+<!-- Entity TYPE -->
+<g id="entity-TYPE">
+	<g id="frame-TYPE">
+		<rect x="110" y="9" width="80" height="25" fill="#92c5de" stroke="#92c5de" stroke-width="0"/>
+		<rect x="110" y="34.0" width="80" height="59" fill="#d1e5f0" stroke="#d1e5f0" stroke-width="0"/>
+		<rect x="110" y="9" width="80" height="84" fill="none" stroke="#4393c3" stroke-width="2"/>
+		<line x1="110" y1="34" x2="190" y2="34" stroke="#4393c3" stroke-width="1"/>
+	</g>
+	<text x="134" y="26.7" fill="#000000" font-family="Verdana" font-size="12">TYPE</text>
+	<text x="115" y="51.8" fill="#000000" font-family="Verdana" font-size="12">name</text>
+	<line x1="115" y1="54" x2="150" y2="54" stroke="#000000" stroke-width="1"/>
+	<text x="115" y="68.8" fill="#000000" font-family="Verdana" font-size="12">created_at</text>
+	<text x="115" y="85.8" fill="#000000" font-family="Verdana" font-size="12">updated_at</text>
+</g>
+
+<!-- Entity USERS -->
+<g id="entity-USERS">
+	<g id="frame-USERS">
+		<rect x="456" y="160" width="80" height="25" fill="#92c5de" stroke="#92c5de" stroke-width="0"/>
+		<rect x="456" y="185.0" width="80" height="111" fill="#d1e5f0" stroke="#d1e5f0" stroke-width="0"/>
+		<rect x="456" y="160" width="80" height="136" fill="none" stroke="#4393c3" stroke-width="2"/>
+		<line x1="456" y1="185" x2="536" y2="185" stroke="#4393c3" stroke-width="1"/>
+	</g>
+	<text x="475" y="177.7" fill="#000000" font-family="Verdana" font-size="12">USERS</text>
+	<text x="461" y="202.7" fill="#000000" font-family="Verdana" font-size="12">pseudo</text>
+	<line x1="461" y1="205" x2="505" y2="205" stroke="#000000" stroke-width="1"/>
+	<text x="461" y="219.7" fill="#000000" font-family="Verdana" font-size="12">email</text>
+	<text x="461" y="236.8" fill="#000000" font-family="Verdana" font-size="12">avatar</text>
+	<text x="461" y="253.8" fill="#000000" font-family="Verdana" font-size="12">password</text>
+	<text x="461" y="270.8" fill="#000000" font-family="Verdana" font-size="12">created_at</text>
+	<text x="461" y="287.8" fill="#000000" font-family="Verdana" font-size="12">updated_at</text>
+</g>
+</svg>

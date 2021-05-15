@@ -1,0 +1,108 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Une superbe plante !{% endblock %}
+
+{% block body %}
+    
+        
+        <h1>Quelle plante magnifique !</h1>
+    <nav class="details_nav">
+    <a href="{{ path('plant_index') }}" class="btn">Retour à la liste</a>
+    <a href="{{ path('plant_edit', {'id': plant.id}) }}" class="btn">Modifier</a>   
+    {{ include('back/plant/_delete_form.html.twig') }}
+    </nav>
+
+    <table class="table_plant">
+        <tbody>
+            <tr>
+                <th>Image</th>
+                <td>{% if plant.picture != null %}
+                <img src="{{ asset('images/picture/' ~ plant.picture ) }}" width="200px" />
+                {% else %}
+                <img src="{{ asset('images/homepage/IMG_0064.PNG' ) }}" width="200px" />
+                {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <td>{{ plant.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ plant.name }}</td>
+            </tr>
+            <tr>
+                <th>Propriétaire</th>
+                <td><a class="btnplantindex" href="/user/{{ plant.calendarSchedule.user.id }}">{{ plant.calendarSchedule.user.pseudo }}</a></td>
+            </tr>
+            <tr>
+                <th>Spécifications</th>
+                <td>{{ plant.specification }}</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>{{ plant.age ? plant.age|date('d-m-Y') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Date d'initialisation du calendrier</th>
+                <td>{{ plant.initializationDate ? plant.initializationDate|date('d-m-Y') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Rythme d'arrosage</th>
+                <td>{% if(plant.watering.d) is defined %} 
+                    Tous les {{ plant.watering.d }} jours
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <th>Eclairage</th>
+                <td>{{ plant.light }}</td>
+            </tr>
+            <tr>
+                <th>Taille</th>
+                <td>{% for cut in plant.cut %}
+                        {{ cut }}
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <th>Fertilisation</th>
+                <td>{% for fertilization in plant.fertilization %}
+                        {{ fertilization }}
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <th>Rempotage</th>
+                <td>{% for repotting in plant.repotting %}
+                        {{ repotting }}
+                    {% endfor %}
+                </td>
+            </tr>
+            
+            <tr>
+                <th>Type de plante</th>
+                <td>{% if (plant.type is defined) %}
+                {{ plant.type }}
+                {% endif %}</td>
+            </tr>
+            <tr>
+                <th>Niveau de compétence recommandé</th>
+                <td>{% if (plant.skill is defined) %}
+                {{ plant.skill }}
+                {% endif %}</td>
+            </tr>
+            <tr>
+                <th>Créée le</th>
+                <td>{{ plant.createdAt ? plant.createdAt|date('d-m-Y H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Dernière mise à jour le</th>
+                <td>{{ plant.updatedAt ? plant.updatedAt|date('d-m-Y H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+        
+{% endblock %}

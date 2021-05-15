@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier une plante{% endblock %}
+
+{% block body %}
+    <h1>Modifier une plante</h1>
+
+    {{ include('back/plant/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+
+    <a href="{{ path('plant_index') }}" class="btn">Retour à la liste</a>
+
+    {{ include('back/plant/_delete_form.html.twig') }}
+{% endblock %}
