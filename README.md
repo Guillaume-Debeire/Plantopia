@@ -1,3 +1,5 @@
-# project-plantopia-frontend
+# Plantopia
 
-Hello, ceci est notre repo de travail pour l'application web Plantopia ! L'application est en cours de développement, patience :) 
+Plantopia est une application de référencement de plantes personnelles.
+
+Celle-ci se divise en deux parties : le front-office et le back-office. 
